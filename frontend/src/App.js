@@ -8,6 +8,8 @@ import Register from "./Register";
 import Page_404 from "./Page_404";
 import { Switch, useRouteMatch, withRouter } from "react-router";
 import { Header } from "./Header";
+import { Footer } from "./Footer";
+
 import { useDispatch } from "react-redux";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -43,6 +45,7 @@ function Main() {
 				<Route path={path + "register"} component={Register} />
 				<Route exact path="*" component={Page_404} />
 			</Switch>
+			<Footer />
 		</>
 	);
 }
