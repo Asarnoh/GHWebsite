@@ -4,6 +4,7 @@ import React from "react";
 import { Navbar } from "react-bootstrap";
 import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
+import { Paper } from "@material-ui/core";
 
 import logo from "./images/gh_deer_logo_beta.png";
 import icon_fb from "./images/icon_fb.png";
@@ -78,67 +79,82 @@ const GridPhone = () => {
 
 export function Footer() {
 	return (
-		<>
-			<Navbar fixed="bottom" bg="light">
-				<div style={{ position: "relative" }}>
-					<Grid container spacing={75}>
-						<Grid item xs={4}>
-							<div>
-								<GridFB />
-								<br />
-								<GridIG />
-								<br />
-								<GridDSC />
-								<br />
-								<GridMail />
-								<br />
-								<GridPhone />
-							</div>
-						</Grid>
-						<Grid item xs={4}>
-							<img src={logo} width="150" height="150" alt="" />
-						</Grid>
-						<Grid item xs={4}>
-							<Typography
-								variant="h6"
-								gutterBottom
-								component="div"
-							>
-								Napisz do nas:
-							</Typography>
-							<Typography
-								variant="h6"
-								gutterBottom
-								component="div"
-							>
-								<Mailto
-									email="gyldahirtir@gmail.com"
-									subject=""
-									body=""
-								>
-									gyldahirtir@gmail.com
-								</Mailto>
-							</Typography>
-
-							<div
-								style={{
-									position: "relative",
-									paddingTop: 80,
-								}}
-							>
+		<div style={{ paddingTop: 40 }}>
+			<Paper elevation={9}>
+				<Navbar
+					bg="light"
+					style={{
+						paddingTop: 40,
+						paddingBottom: 40,
+						paddingLeft: 30,
+						paddingRight: 30,
+					}}
+				>
+					<div style={{ position: "relative" }}>
+						<Grid container spacing={75}>
+							<Grid item xs={4}>
+								<div>
+									<GridFB />
+									<br />
+									<GridIG />
+									<br />
+									<GridDSC />
+									<br />
+									<GridMail />
+									<br />
+									<GridPhone />
+								</div>
+							</Grid>
+							<Grid item xs={4}>
+								<img
+									src={logo}
+									width="150"
+									height="150"
+									alt=""
+								/>
+							</Grid>
+							<Grid item xs={4}>
 								<Typography
 									variant="h6"
 									gutterBottom
 									component="div"
 								>
-									Made with 💛 <br />
-									by {link_linkedin}
+									Napisz do nas:
 								</Typography>
-							</div>
+								<Typography
+									variant="h6"
+									gutterBottom
+									component="div"
+								>
+									<Mailto
+										email="gyldahirtir@gmail.com"
+										subject=""
+										body=""
+									>
+										gyldahirtir@gmail.com
+									</Mailto>
+								</Typography>
+
+								<div
+									style={{
+										position: "relative",
+										paddingTop: 80,
+									}}
+								>
+									<Typography
+										variant="h6"
+										gutterBottom
+										component="div"
+									>
+										Made with 💛 <br />
+										by {link_linkedin}
+									</Typography>
+								</div>
+							</Grid>
 						</Grid>
-					</Grid>
-				</div>
-			</Navbar>
-		</>
+					</div>
+				</Navbar>
+			</Paper>
+		</div>
 	);
 }

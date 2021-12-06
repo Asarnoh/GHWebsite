@@ -51,7 +51,10 @@ export function Header() {
 				</Navbar.Brand>
 
 				<Nav fill variant="tabs" defaultActiveKey="/home">
-					<Nav.Link as={Link} to="/booking">
+					<Nav.Link as={Link} to="/enroll">
+						Rekrutacja
+					</Nav.Link>
+					<Nav.Link as={Link} to="/about">
 						O nas
 					</Nav.Link>
 					<Nav.Link as={Link} to="/booking">

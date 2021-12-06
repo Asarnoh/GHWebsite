@@ -9,6 +9,8 @@ import Page_404 from "./Page_404";
 import { Switch, useRouteMatch, withRouter } from "react-router";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import Enrollment from "./Enrollment";
+import AboutUs from "./AboutUs";
 
 import { useDispatch } from "react-redux";
 import "./App.css";
@@ -39,8 +41,8 @@ function Main() {
 			<Header />
 			<Switch>
 				<Route path={path} exact component={Home} />
-				<Route path={path + "user"} component={User} />
-				<Route path={path + "admin"} component={Admin} />
+				<Route path={path + "enroll"} component={Enrollment} />
+				<Route path={path + "about"} component={AboutUs} />
 				<Route path={path + "booking"} component={Booking} />
 				<Route path={path + "register"} component={Register} />
 				<Route exact path="*" component={Page_404} />
