@@ -21,6 +21,61 @@ import { Container } from "@mui/material";
 
 import logo from "./images/gh_deer_logo_beta.png";
 
+const aboutUsString =
+	"Drużyna Gylda Hirtir zamieszkuje osadę niewielką w miejscu,\
+					gdzie dwa władztwa się przenikają. Od północy bowiem ciągnie\
+					ku niej wiatr pogański, źródło swe znajdujący u Gorma\
+					Starego, który w Jelling rezydując wciąż tkwi w\
+					innowierczych błędach. Od południa zaś promienieje nań blask\
+					najświętszych rządów króla Sasów i Franków Ottona, który\
+					będąc pobożnym chrześcijaninem nieustannie czyni starania,\
+					aby zagubionemu stadu północy wskazać drogę do owczarni\
+					pańskiej. \nDowództwo nad nią sprawuje człowiek mieniący się\
+					jarlem, co w mowie północnej wodza oznacza, a który to przez\
+					ojca swego obdarowany został imieniem Einar. Człek ów,\
+					chciwym ponad miarę będąc, bardziej ceni blask srebrnych\
+					monet niźli pokorę, uczciwość i wierność. Prowadzi on swych\
+					kompanów, zwących się drużynnikami, na misje wszelakiego\
+					rodzaju, które zlecają mu tak niegodziwcy, jak i ludzie\
+					prawi. Prawdą jest, że maniery jego niczym jad sączone w\
+					serca towarzyszy, popychają ich nad wyraz często do\
+					niegodziwości, aczkolwiek wspomnieć muszę, że nawet w korcu\
+					zepsutego zboża jedno dobre ziarno potrafi się uchować.\
+					\nStojąc zatem pomiędzy dwiema stronami, drużyna żadnej nie\
+					jest posłuszna, czyniąc jedynie to, co jej samej zysk\
+					przynieść może. Jej członkowie poganami będąc w większości,\
+					lubują się w składaniu ofiar swym bogom, prosząc ich o\
+					wszystko, czego zapragną ich proste serca. Wiara ta, choć\
+					jedynie cieniem przy światłości chrześcijaństwa pozostaje,\
+					zdaje się wzmacniać ich ducha. Kiedy bowiem do starć\
+					zbrojnych przychodzi, z rzadka zdarza się, że bez wyraźnego\
+					rozkazu ratują swe życia ucieczką, którą za największą hańbę\
+					sobie poczytują. \nSama zaś drużyna składa się z wszelakiej\
+					maści mężów i niewiast, z których jedni rzemiosłem się\
+					parają, inni służby u bogatszych od siebie czynią, jeszcze\
+					inni, których większość w ich szeregach, dusze marsowe\
+					posiadając, czynią użytek z broni wszelakiego rodzaju.\
+					Wielki wśród nich panuje porządek. Jarl twardą ręką swych\
+					kompanów trzymający, dba aby każdy z nich swe miejsce w\
+					drużynie zajmował, dzięki czemu spory wśród nich są rzadkie,\
+					a waśnie nie trwają długo. Wielkim staraniem tejże drużyny\
+					jest, bez wątpienia, ciągłe wzmacnianie swych szeregów\
+					nowymi rekrutami, których mnogość potrzebna jest na\
+					czynionych wspólnie wyprawach, tak lądowych, jak i morskich.\
+					\nZe względu zaś na mnogość chętnych oraz duże ryzyko tychże\
+					przedsięwzięć, wybitny frasunek czynią nad tym, kogo w swe\
+					szeregi wcielić, odrzucając ludzi kłótliwych, leniwych i\
+					innymi wadami charakteru obdarzonych. W czasie pokoju cenią\
+					sobie oni odpoczynek, acz nie stronią od prac wszelakich,\
+					dbając o swe domy lub służąc za pomocników miastu Haithabu.\
+					W czasie zaś wojny lub innej zawieruchy zaciągają się na\
+					służbę u bogatszych władyków lub samemu próbując szczęścia\
+					wyruszają w morze z nadzieją na spotkanie niepilnie\
+					strzeżonych transportów kupieckich. Mamona zaś zdobyta tak\
+					przez uczynki prawe, jak i profesję marsową, dzielona jest\
+					sprawiedliwie wedle ważności zajęcia i stażu w ich\
+					szeregach.";
+
 function TextTop() {
 	return (
 		<Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
@@ -55,7 +110,7 @@ function TextTop() {
 	);
 }
 
-function AboutUs() {
+function AboutUs(props) {
 	return (
 		<Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
 			<Grid item xs={12}>
@@ -65,63 +120,22 @@ function AboutUs() {
 				</h1>
 			</Grid>
 			<Grid item xs={12}>
-				<p>
-					Drużyna Gylda Hirtir zamieszkuje osadę niewielką w miejscu,
-					gdzie dwa władztwa się przenikają. Od północy bowiem ciągnie
-					ku niej wiatr pogański, źródło swe znajdujący u Gorma
-					Starego, który w Jelling rezydując wciąż tkwi w
-					innowierczych błędach. Od południa zaś promienieje nań blask
-					najświętszych rządów króla Sasów i Franków Ottona, który
-					będąc pobożnym chrześcijaninem nieustannie czyni starania,
-					aby zagubionemu stadu północy wskazać drogę do owczarni
-					pańskiej. Dowództwo nad nią sprawuje człowiek mieniący się
-					jarlem, co w mowie północnej wodza oznacza, a który to przez
-					ojca swego obdarowany został imieniem Einar. Człek ów,
-					chciwym ponad miarę będąc, bardziej ceni blask srebrnych
-					monet niźli pokorę, uczciwość i wierność. Prowadzi on swych
-					kompanów, zwących się drużynnikami, na misje wszelakiego
-					rodzaju, które zlecają mu tak niegodziwcy, jak i ludzie
-					prawi. Prawdą jest, że maniery jego niczym jad sączone w
-					serca towarzyszy, popychają ich nad wyraz często do
-					niegodziwości, aczkolwiek wspomnieć muszę, że nawet w korcu
-					zepsutego zboża jedno dobre ziarno potrafi się uchować.
-					Stojąc zatem pomiędzy dwiema stronami, drużyna żadnej nie
-					jest posłuszna, czyniąc jedynie to, co jej samej zysk
-					przynieść może. Jej członkowie poganami będąc w większości,
-					lubują się w składaniu ofiar swym bogom, prosząc ich o
-					wszystko, czego zapragną ich proste serca. Wiara ta, choć
-					jedynie cieniem przy światłości chrześcijaństwa pozostaje,
-					zdaje się wzmacniać ich ducha. Kiedy bowiem do starć
-					zbrojnych przychodzi, z rzadka zdarza się, że bez wyraźnego
-					rozkazu ratują swe życia ucieczką, którą za największą hańbę
-					sobie poczytują. Sama zaś drużyna składa się z wszelakiej
-					maści mężów i niewiast, z których jedni rzemiosłem się
-					parają, inni służby u bogatszych od siebie czynią, jeszcze
-					inni, których większość w ich szeregach, dusze marsowe
-					posiadając, czynią użytek z broni wszelakiego rodzaju.
-					Wielki wśród nich panuje porządek. Jarl twardą ręką swych
-					kompanów trzymający, dba aby każdy z nich swe miejsce w
-					drużynie zajmował, dzięki czemu spory wśród nich są rzadkie,
-					a waśnie nie trwają długo. Wielkim staraniem tejże drużyny
-					jest, bez wątpienia, ciągłe wzmacnianie swych szeregów
-					nowymi rekrutami, których mnogość potrzebna jest na
-					czynionych wspólnie wyprawach, tak lądowych, jak i morskich.
-					Ze względu zaś na mnogość chętnych oraz duże ryzyko tychże
-					przedsięwzięć, wybitny frasunek czynią nad tym, kogo w swe
-					szeregi wcielić, odrzucając ludzi kłótliwych, leniwych i
-					innymi wadami charakteru obdarzonych. W czasie pokoju cenią
-					sobie oni odpoczynek, acz nie stronią od prac wszelakich,
-					dbając o swe domy lub służąc za pomocników miastu Haithabu.
-					W czasie zaś wojny lub innej zawieruchy zaciągają się na
-					służbę u bogatszych władyków lub samemu próbując szczęścia
-					wyruszają w morze z nadzieją na spotkanie niepilnie
-					strzeżonych transportów kupieckich. Mamona zaś zdobyta tak
-					przez uczynki prawe, jak i profesję marsową, dzielona jest
-					sprawiedliwie wedle ważności zajęcia i stażu w ich
-					szeregach.
-				</p>
+				{props.text.split("\n").map((i) => {
+					//https://www.jsdiaries.com/how-to-create-a-new-line-in-jsx-and-reactjs/
+					return <p>{i}</p>;
+				})}
 			</Grid>
 		</Grid>
+	);
+}
+
+function ImgBackground(props) {
+	return (
+		<img
+			src={props.img}
+			style={{ width: "100%", opacity: "0.5" }}
+			align="center"
+		/>
 	);
 }
 
@@ -267,9 +281,7 @@ export default function Home() {
 				<Grid item xs={12}>
 					<TextTop />
 				</Grid>
-				<Grid item xs={12}>
-					<DeerComponent />
-				</Grid>
+
 				<Grid item xs={12}>
 					<HomeCarousel
 						image1={img_home_carousel_1}
@@ -278,7 +290,10 @@ export default function Home() {
 					/>
 				</Grid>
 				<Grid item xs={12}>
-					<AboutUs />
+					<DeerComponent />
+				</Grid>
+				<Grid item xs={12}>
+					<AboutUs text={aboutUsString} />
 				</Grid>
 				<Grid item xs={12}>
 					<Text4 />

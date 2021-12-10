@@ -42,7 +42,7 @@ export function Header() {
 
 	return (
 		<>
-			<Navbar bg="dark" variant="dark" fixed="top">
+			<Navbar className="color-nav" variant="light" fixed="top">
 				<Navbar.Brand href="/">
 					<Container>
 						<img src={logo} width="50" height="50" alt="" />
@@ -51,16 +51,16 @@ export function Header() {
 				</Navbar.Brand>
 
 				<Nav fill variant="tabs" defaultActiveKey="/home">
-					<Nav.Link as={Link} to="/enroll">
+					<Nav.Link as={Link} to="/join">
 						Rekrutacja
 					</Nav.Link>
 					<Nav.Link as={Link} to="/about">
 						O nas
 					</Nav.Link>
-					<Nav.Link as={Link} to="/booking">
+					<Nav.Link as={Link} to="/team">
 						Druzynnicy
 					</Nav.Link>
-					<Nav.Link as={Link} to="/booking">
+					<Nav.Link as={Link} to="/contact">
 						Kontakt
 					</Nav.Link>
 					<Nav.Link
