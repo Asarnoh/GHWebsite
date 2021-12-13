@@ -12,6 +12,25 @@ import { CardActionArea } from "@mui/material";
 import { Container } from "@mui/material";
 
 import logo from "./images/gh_deer_logo_beta.png";
+import icon_tunic from "./images/icon_tunic.png";
+import icon_pants from "./images/icon_pants.png";
+import icon_wrappers from "./images/icon_wrappers.png";
+import icon_belt from "./images/icon_belt.png";
+import icon_shoes from "./images/icon_shoes.png";
+import icon_runestone from "./images/icon_runestone.png";
+import icon_knife from "./images/icon_knife.png";
+import icon_fibula from "./images/icon_fibula.png";
+import icon_spoon from "./images/icon_spoon.png";
+import icon_bowl from "./images/icon_bowl.png";
+import icon_mug from "./images/icon_mug.png";
+import icon_sheep from "./images/icon_sheep.png";
+import icon_blanket from "./images/icon_blanket.png";
+import icon_waterbag from "./images/icon_waterbag.png";
+// import icon_bag from "./images/icon_bag.png";
+import icon_coat from "./images/icon_coat.png";
+import icon_hood from "./images/icon_hood.png";
+import icon_socks from "./images/icon_socks.png";
+import icon_underwear from "./images/icon_underwear.png";
 
 const textIntro =
 	"Poniżej przedstawiam cały okres rekrutacyjno-przygotowawczy, który obejmuję Was od chwili przystąpienia do drużyny.\
@@ -116,6 +135,17 @@ function EnrollIntro(props) {
 	);
 }
 
+function Icons(props) {
+	return (
+		<>
+			{props.icons.map((element) => {
+				<Grid item xs={3}>
+					<img src={element} width={300} />
+				</Grid>;
+			})}
+		</>
+	);
+}
 export default function JoinUs() {
 	return (
 		<Container>
@@ -131,14 +161,59 @@ export default function JoinUs() {
 				<Grid item xs={12}>
 					<EnrollIntro header="Wstęp" stepText={textIntro} />
 				</Grid>
+				{
+					//-------------------------------------------------------------------------------
+					//-------------------------------------------------------------------------------
+				}
+				<Grid item xs={3}>
+					<img src={icon_tunic} width={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					<img src={icon_pants} height={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					<img src={icon_wrappers} width={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					<img src={icon_belt} width={300}></img>
+				</Grid>
+				{/* <Icons
+					icons={[icon_tunic, icon_pants, icon_pants, icon_belt]}
+				/> */}
 				<Grid item xs={12}>
 					<EnrollIntro
 						header="Miesiąc pierwszy"
 						stepText={textMonth1}
 					/>
 				</Grid>
+				{
+					//-------------------------------------------------------------------------------
+					//-------------------------------------------------------------------------------
+				}
+				<Grid item xs={6}>
+					<img src={icon_shoes} width={300}></img>
+				</Grid>
+				<Grid item xs={6}>
+					<img src={icon_runestone} height={300}></img>
+				</Grid>
 				<Grid item xs={12}>
 					<EnrollIntro header="Miesiąc drugi" stepText={textMonth2} />
+				</Grid>
+				{
+					//-------------------------------------------------------------------------------
+					//-------------------------------------------------------------------------------
+				}
+				<Grid item xs={3}>
+					<img src={icon_coat} width={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					<img src={icon_hood} height={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					<img src={icon_socks} width={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					<img src={icon_underwear} width={300}></img>
 				</Grid>
 				<Grid item xs={12}>
 					<EnrollIntro
@@ -146,14 +221,56 @@ export default function JoinUs() {
 						stepText={textMonth3}
 					/>
 				</Grid>
+				{
+					//-------------------------------------------------------------------------------
+					//-------------------------------------------------------------------------------
+				}
+				<Grid item xs={6}>
+					<img src={icon_knife} width={300}></img>
+				</Grid>
+				<Grid item xs={6}>
+					<img src={icon_fibula} height={300}></img>
+				</Grid>
 				<Grid item xs={12}>
 					<EnrollIntro
 						header="Miesiąc czwarty"
 						stepText={textMonth4}
 					/>
 				</Grid>
+				{
+					//-------------------------------------------------------------------------------
+					//-------------------------------------------------------------------------------
+				}
+				<Grid item xs={3}>
+					<img src={icon_spoon} width={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					<img src={icon_bowl} height={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					<img src={icon_mug} width={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					<img src={icon_blanket} width={300}></img>
+				</Grid>
 				<Grid item xs={12}>
 					<EnrollIntro header="Miesiąc piąty" stepText={textMonth5} />
+				</Grid>
+				{
+					//-------------------------------------------------------------------------------
+					//-------------------------------------------------------------------------------
+				}
+				<Grid item xs={3}>
+					<img src={icon_sheep} width={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					<img src={icon_blanket} height={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					<img src={icon_waterbag} width={300}></img>
+				</Grid>
+				<Grid item xs={3}>
+					{/* <img src={icon_bag} width={300}></img> */}
 				</Grid>
 				<Grid item xs={12}>
 					<EnrollIntro
@@ -161,6 +278,10 @@ export default function JoinUs() {
 						stepText={textMonth6}
 					/>
 				</Grid>
+				{
+					//-------------------------------------------------------------------------------
+					//-------------------------------------------------------------------------------
+				}
 				<Grid item xs={12}>
 					<EnrollIntro header="Podsumowanie" stepText={textOutro} />
 				</Grid>

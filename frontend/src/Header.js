@@ -42,7 +42,7 @@ export function Header() {
 
 	return (
 		<>
-			<Navbar className="color-nav" variant="light" fixed="top">
+			<Navbar className="color-nav" fixed="top">
 				<Navbar.Brand href="/">
 					<Container>
 						<img src={logo} width="50" height="50" alt="" />
