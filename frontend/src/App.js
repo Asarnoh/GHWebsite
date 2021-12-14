@@ -12,6 +12,7 @@ import { Footer } from "./Footer";
 import JoinUs from "./JoinUs";
 import AboutUs from "./AboutUs";
 import ContactUs from "./ContactUs";
+import Team from "./Team";
 
 import { useDispatch } from "react-redux";
 import "./App.css";
@@ -44,7 +45,7 @@ function Main() {
 				<Route path={path} exact component={Home} />
 				<Route path={path + "join"} component={JoinUs} />
 				<Route path={path + "about"} component={AboutUs} />
-				<Route path={path + "team"} component={JoinUs} />
+				<Route path={path + "team"} component={Team} />
 				<Route path={path + "contact"} component={ContactUs} />
 				<Route exact path="*" component={Page_404} />
 			</Switch>
