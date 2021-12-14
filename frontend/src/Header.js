@@ -50,7 +50,12 @@ export function Header() {
 					</Container>
 				</Navbar.Brand>
 
-				<Nav fill variant="tabs" defaultActiveKey="/home">
+				<Nav
+					fill
+					variant="tabs"
+					defaultActiveKey="/home"
+					style={{ position: "relative" }}
+				>
 					<Nav.Link as={Link} to="/join">
 						Rekrutacja
 					</Nav.Link>

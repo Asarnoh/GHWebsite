@@ -17,13 +17,27 @@ import TeamCharacterComponent from "./TeamCharacterComponent";
 
 import logo from "./images/gh_deer_logo_beta.png";
 
+const teamStory1 =
+	"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet, \
+orci mattis porta mattis, ipsum neque ultricies felis, vitae fringilla arcu est vel elit. \
+\nMauris ut nibh eu velit faucibus sollicitudin. Praesent nulla mauris, vestibulum semper purus nec, \
+iaculis venenatis ligula. Phasellus ultricies vitae arcu eget posuere. Vivamus condimentum ut libero quis fringilla. \
+Nam ac aliquet purus. Proin facilisis libero in egestas dapibus. Aenean et dolor nibh. Integer non tincidunt tellus. \
+Aenean ullamcorper leo at tortor egestas, at posuere felis placerat. Suspendisse potenti. \
+ed at dui est. In nec pretium leo. Ut ac ornare velit. Donec nunc eros, pulvinar nec odio sed, \
+sodales pretium augue. Pellentesque quis facilisis ipsum, eu eleifend lectus.Nunc pretium tortor vitae sem posuere, \
+vel viverra felis fringilla. Nulla nec nibh purus. Suspendisse in purus sit amet dui finibus rhoncus non sit amet nunc. \
+\nIn dignissim lectus elit, in vehicula sem eleifend vel. Integer semper sem eget feugiat gravida. Curabitur blandit diam \
+vel enim porta scelerisque. Fusce bibendum ligula quis nisi mattis, vitae pulvinar turpis porttitor. Praesent sed ipsum \
+at quam lobortis interdum.";
+
 const TeamList = [
 	{
 		name: "Exempel",
 		surname: "Exempelsson",
 		rank: "Jarl",
 		pic: team_pic1,
-		story: "Lorem ipsum",
+		story: teamStory1,
 		icon: "",
 		weapon: "Light Magic",
 		profession: "Guardian",
@@ -33,7 +47,7 @@ const TeamList = [
 		surname: "Exempelsson",
 		rank: "Not jarl",
 		pic: team_pic2,
-		story: "Lorem ipsum",
+		story: teamStory1,
 		icon: "",
 		weapon: "Spirit Magic",
 		profession: "Revenant",
@@ -43,7 +57,7 @@ const TeamList = [
 		surname: "Exempelsson",
 		rank: "Not jarl either",
 		pic: team_pic3,
-		story: "Lorem ipsum",
+		story: teamStory1,
 		icon: "",
 		weapon: "Shadow Magic",
 		profession: "Thief",

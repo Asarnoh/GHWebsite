@@ -48,21 +48,33 @@ export default class TeamCharacterComponent extends React.Component {
 					<Grid item xs={3}>
 						<Container>
 							<Typography>{this.state.icon}</Typography>
-							<Typography>{this.state.rank}</Typography>
-							<Typography>
+							<Typography variant="h4">
+								{this.state.rank}
+							</Typography>
+							<Typography variant="h5">
 								{this.state.name + " " + this.state.surname}
 							</Typography>
 							<img src={this.state.pic} width={200} />
 
-							<Typography>{this.state.profession}</Typography>
-							<Typography>{this.state.weapon}</Typography>
+							<Typography variant="h5">
+								{this.state.profession}
+							</Typography>
+							<Typography variant="h5">
+								{this.state.weapon}
+							</Typography>
 						</Container>
 					</Grid>
 
 					<Grid item xs={6}>
 						<Container>
-							<Typography>Historia</Typography>
-							<Typography>{this.state.story}</Typography>
+							<Typography variant="h4">Historia</Typography>
+							<Typography>
+								{this.state.story
+									.split("\n")
+									.map((paragraph) => {
+										return <p>{paragraph}</p>;
+									})}
+							</Typography>
 						</Container>
 					</Grid>
 				</Grid>
