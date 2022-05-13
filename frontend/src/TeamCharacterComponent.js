@@ -48,13 +48,16 @@ export default class TeamCharacterComponent extends React.Component {
 					<Grid item xs={3}>
 						<Container>
 							<Typography>{this.state.icon}</Typography>
+
 							<Typography variant="h4">
-								{this.state.rank}
-							</Typography>
-							<Typography variant="h5">
 								{this.state.name + " " + this.state.surname}
 							</Typography>
-							<img src={this.state.pic} width={200} />
+							<Typography variant="h5">
+								{this.state.rank}
+							</Typography>
+							<div width={300}>
+								<img src={this.state.pic} width={250} />
+							</div>
 
 							<Typography variant="h5">
 								{this.state.profession}

@@ -65,26 +65,22 @@ export function Header() {
 					<Nav.Link as={Link} to="/team">
 						Druzynnicy
 					</Nav.Link>
+					<Nav.Link as={Link} to="/team">
+						Oferta
+					</Nav.Link>
 					<Nav.Link as={Link} to="/contact">
 						Kontakt
-					</Nav.Link>
-					<Nav.Link
-						as={Link}
-						to="/user"
-						className="justify-content-end"
-					>
-						Panel Użytkownika
 					</Nav.Link>
 				</Nav>
 				{user ? (
 					<>
-						<Avatar
+						{/* <Avatar
 							alt={userName}
 							src={userImageUrl}
 							style={{ position: "absolute", right: "120px" }}
 						>
 							{userName?.charAt(0)}
-						</Avatar>
+						</Avatar> */}
 						<p
 							style={{
 								position: "absolute",

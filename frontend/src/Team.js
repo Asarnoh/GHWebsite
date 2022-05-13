@@ -17,6 +17,9 @@ import TeamCharacterComponent from "./TeamCharacterComponent";
 
 import logo from "./images/gh_deer_logo_beta.png";
 
+import img_home_rental_1 from "./images/img_home_rental_1.jpg";
+import img_exempel from "./images/img_exempel.jpg";
+
 const teamStory1 =
 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet, \
 orci mattis porta mattis, ipsum neque ultricies felis, vitae fringilla arcu est vel elit. \
@@ -30,6 +33,21 @@ vel viverra felis fringilla. Nulla nec nibh purus. Suspendisse in purus sit amet
 \nIn dignissim lectus elit, in vehicula sem eleifend vel. Integer semper sem eget feugiat gravida. Curabitur blandit diam \
 vel enim porta scelerisque. Fusce bibendum ligula quis nisi mattis, vitae pulvinar turpis porttitor. Praesent sed ipsum \
 at quam lobortis interdum.";
+
+const teamStory2 =
+	"Urodzony w roku 938 na obrzeżach miasta Hedeby. Matka umarła podczas porodu jego brata. \
+	Wiódł spokojne życie wraz z ojcem  i 2 lata starszym bratem Rolfem. Pod okiem ojca Haralda bracia uczyli się walki, \
+	opowiadał im różne opowieści o bogach stał się dla nich autorytetem.  Tak więc życie toczyło się sielankowo \
+	dla Thorsteina do czasu, gdy w roku 948 ojciec nie przybył z jednej z wielu jego wypraw lupiezczych. \
+	\nThorstein wraz z bratem postanowił odejść z domu i wyruszyć w świat ponieważ nic ich nie trzymało w domu. \
+	Po latach tulaczki Znalezli drużynę z którymi bardzo się zaprzyjaznili. Tak więc 955 roku Thorstein trafił \
+	do załogi znanego Einara Ingvarssona. Tam poznał Valgarda Tryggvasona który przekazał tragiczna wieść o śmierci ojca. \
+	Opowiadał że Harald z Hedeby zginął podczas wypedzania Eryka Krwawy Topór z ulic Yorku. Valgard opowiedział \
+	także ze odpowiedzialnymi osobami za śmierć ich ojca są mozni Króla Edreda. Thorstein wraz z bratem poprzysiegli, \
+	że zabiją ludzi  i pomszczą ojca. Drużyna Jarla Einara obiecała im pomóc przeciwko zabójców ich ojca.\
+	\nTak więc  po wielu trudach Thorstein odnalazł mordercę ojca którym był niestety Valgard. \
+	Jego brat Rolf został przyciągnięty na stronę Valgarda i kilku innych jego popleczników. \
+	\nThorstein nie miał żadnych złudzeń że jego brat go zdradził za wizję otrzymania nagrody. ";
 
 const TeamList = [
 	{
@@ -61,6 +79,26 @@ const TeamList = [
 		icon: "",
 		weapon: "Shadow Magic",
 		profession: "Thief",
+	},
+	{
+		name: "Wigon",
+		surname: "Hamburgersson",
+		rank: "Karll",
+		pic: img_home_rental_1,
+		story: teamStory1,
+		icon: "",
+		weapon: "Shadow Magic",
+		profession: "Thief",
+	},
+	{
+		name: "Thorstein",
+		surname: "Haraldson",
+		rank: "Karll",
+		pic: img_exempel,
+		story: teamStory2,
+		icon: "",
+		weapon: "Bushido Magic",
+		profession: "Kret",
 	},
 ];
 

@@ -20,6 +20,7 @@ import { CardActionArea } from "@mui/material";
 import { Container } from "@mui/material";
 
 import logo from "./images/gh_deer_logo_beta.png";
+import logo_kontur from "./images/img_jelon_kontur.png";
 
 const aboutUsString =
 	"Drużyna Gylda Hirtir zamieszkuje osadę niewielką w miejscu,\
@@ -279,10 +280,6 @@ export default function Home() {
 				style={{ paddingTop: 80 }}
 			>
 				<Grid item xs={12}>
-					<TextTop />
-				</Grid>
-
-				<Grid item xs={12}>
 					<HomeCarousel
 						image1={img_home_carousel_1}
 						image2={img_home_carousel_2}
@@ -290,15 +287,12 @@ export default function Home() {
 					/>
 				</Grid>
 				<Grid item xs={12}>
-					<DeerComponent />
-				</Grid>
-				<Grid item xs={12}>
 					<AboutUs text={aboutUsString} />
 				</Grid>
 				<Grid item xs={12}>
 					<Text4 />
-				</Grid>
-
+				</Grid>{" "}
+				*/}
 				<Grid item xs={12}>
 					<HomeCarousel
 						image1={img_home_carousel_5}
@@ -306,9 +300,9 @@ export default function Home() {
 						image3={img_home_carousel_7}
 					/>
 				</Grid>
-				<Grid item xs={12}>
+				{/* <Grid item xs={12}>
 					<CardContainer />
-				</Grid>
+				</Grid> */}
 			</Grid>
 		</Container>
 	);
